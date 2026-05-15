@@ -6,9 +6,9 @@
 
 header('Content-Type: application/json');
 
-require_once __DIR__ . '/../../config/config.php';
-require_once __DIR__ . '/../../src/Core.php';
-require_once __DIR__ . '/../../src/Models.php';
+require_once __DIR__ . '/../config/config.php';
+require_once __DIR__ . '/../src/Core.php';
+require_once __DIR__ . '/../src/Models.php';
 
 $method = $_SERVER['REQUEST_METHOD'];
 $action = $_GET['action'] ?? '';

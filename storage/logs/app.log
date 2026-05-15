@@ -1,1 +1,10 @@
 [2026-05-15 09:20:56] [INFO] User logged in: admin@bems.local
+[2026-05-15 09:23:08] [INFO] User logged in: admin@bems.local
+[2026-05-15 09:26:57] [INFO] New user registered: test@gmail.com (role=user)
+[2026-05-15 09:27:16] [INFO] User logged in: Test@gmail.com
+[2026-05-15 09:27:16] [ERROR] Database Execute Error: Prepare failed: Column 'status' in where clause is ambiguous
+[2026-05-15 09:27:16] [ERROR] Events API Error: Prepare failed: Column 'status' in where clause is ambiguous
+[2026-05-15 09:27:54] [INFO] User logged out
+[2026-05-15 09:28:10] [INFO] User logged in: admin@bems.local
+[2026-05-15 09:28:10] [ERROR] Database Execute Error: Prepare failed: Column 'status' in where clause is ambiguous
+[2026-05-15 09:28:10] [ERROR] Events API Error: Prepare failed: Column 'status' in where clause is ambiguous
