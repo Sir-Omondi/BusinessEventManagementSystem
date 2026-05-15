@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Event Management System - Professional Event Solutions</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="assets/css/landing.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top shadow-sm">
+        <div class="container-lg">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="fas fa-calendar-check"></i> BEMS
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#benefits">Benefits</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
+                    <li class="nav-item ms-2">
+                        <button class="btn btn-light btn-sm" id="navLoginBtn">Login</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section text-white text-center py-5">
+        <div class="container-lg py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6 text-start">
+                    <h1 class="display-4 fw-bold mb-4">Professional Event Management Made Simple</h1>
+                    <p class="lead mb-4">Streamline your events with our comprehensive management system. Create, manage, and track events effortlessly.</p>
+                    <div class="btn-group-vertical gap-3" role="group">
+                        <button class="btn btn-light btn-lg" id="heroLoginBtn">
+                            <i class="fas fa-sign-in-alt"></i> Login Now
+                        </button>
+                        <button class="btn btn-outline-light btn-lg" id="heroSignupBtn">
+                            <i class="fas fa-user-plus"></i> Create Account
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-4 mt-lg-0">
+                    <div class="hero-illustration">
+                        <i class="fas fa-calendar-alt fa-10x text-white opacity-50"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-5 bg-light">
+        <div class="container-lg">
+            <h2 class="text-center mb-5 fw-bold">Powerful Features</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-calendar-plus"></i>
+                        </div>
+                        <h5>Event Creation</h5>
+                        <p>Create and manage events with detailed information, dates, locations, and capacity management.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h5>Attendee Management</h5>
+                        <p>Register attendees, track registrations, and manage capacity limits efficiently.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <h5>Check-In/Out</h5>
+                        <p>Real-time check-in and check-out functionality for seamless event tracking.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <h5>Analytics & Reports</h5>
+                        <p>Generate detailed reports and analytics with CSV export capabilities.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <h5>Advanced Search</h5>
+                        <p>Powerful search and filtering capabilities to find events quickly.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <h5>Secure Authentication</h5>
+                        <p>Enterprise-grade security with JWT tokens and encrypted passwords.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h5>Mobile Responsive</h5>
+                        <p>Fully responsive design works seamlessly on all devices.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-cog"></i>
+                        </div>
+                        <h5>Easy Integration</h5>
+                        <p>Simple integration with your existing systems via REST API.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="py-5">
+        <div class="container-lg">
+            <h2 class="text-center mb-5 fw-bold">Why Choose BEMS?</h2>
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <ul class="benefits-list">
+                        <li>
+                            <i class="fas fa-check text-success"></i>
+                            <span>Save time with automated event management</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check text-success"></i>
+                            <span>Reduce manual work and human errors</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check text-success"></i>
+                            <span>Improve attendee experience</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check text-success"></i>
+                            <span>Make data-driven decisions with analytics</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check text-success"></i>
+                            <span>24/7 access from anywhere</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check text-success"></i>
+                            <span>Enterprise-grade security</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <div class="benefits-illustration">
+                        <i class="fas fa-chart-line fa-5x text-primary opacity-25"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-5 bg-light">
+        <div class="container-lg">
+            <h2 class="text-center mb-5 fw-bold">Simple Pricing</h2>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-6 col-lg-4">
+                    <div class="pricing-card">
+                        <h4 class="text-center mb-3">Basic</h4>
+                        <div class="price text-center">
+                            <span class="amount">Free</span>
+                        </div>
+                        <ul class="pricing-features">
+                            <li><i class="fas fa-check"></i> Up to 5 events</li>
+                            <li><i class="fas fa-check"></i> Basic reports</li>
+                            <li><i class="fas fa-check"></i> Email support</li>
+                            <li class="unavailable"><i class="fas fa-times"></i> Advanced analytics</li>
+                            <li class="unavailable"><i class="fas fa-times"></i> API access</li>
+                        </ul>
+                        <button class="btn btn-primary w-100" data-plan="basic">Get Started</button>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="pricing-card featured">
+                        <div class="badge bg-success position-absolute">Popular</div>
+                        <h4 class="text-center mb-3">Professional</h4>
+                        <div class="price text-center">
+                            <span class="amount">$29</span>
+                            <span class="period">/month</span>
+                        </div>
+                        <ul class="pricing-features">
+                            <li><i class="fas fa-check"></i> Unlimited events</li>
+                            <li><i class="fas fa-check"></i> Advanced reports</li>
+                            <li><i class="fas fa-check"></i> Priority support</li>
+                            <li><i class="fas fa-check"></i> Advanced analytics</li>
+                            <li><i class="fas fa-check"></i> API access</li>
+                        </ul>
+                        <button class="btn btn-primary w-100" data-plan="professional">Start Free Trial</button>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="pricing-card">
+                        <h4 class="text-center mb-3">Enterprise</h4>
+                        <div class="price text-center">
+                            <span class="amount">Custom</span>
+                        </div>
+                        <ul class="pricing-features">
+                            <li><i class="fas fa-check"></i> Everything in Pro</li>
+                            <li><i class="fas fa-check"></i> Dedicated support</li>
+                            <li><i class="fas fa-check"></i> Custom integration</li>
+                            <li><i class="fas fa-check"></i> SLA guarantee</li>
+                            <li><i class="fas fa-check"></i> On-premise option</li>
+                        </ul>
+                        <button class="btn btn-outline-primary w-100" data-plan="enterprise">Contact Sales</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section text-white text-center py-5">
+        <div class="container-lg">
+            <h2 class="mb-4">Ready to Transform Your Events?</h2>
+            <p class="lead mb-4">Join thousands of event organizers already using BEMS</p>
+            <button class="btn btn-light btn-lg" id="ctaSignupBtn">
+                <i class="fas fa-arrow-right"></i> Get Started Free
+            </button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container-lg">
+            <div class="row">
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <h6 class="fw-bold">BEMS</h6>
+                    <p class="small">Professional event management solution for modern businesses.</p>
+                </div>
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <h6 class="fw-bold">Quick Links</h6>
+                    <ul class="list-unstyled small">
+                        <li><a href="#features" class="text-decoration-none text-white">Features</a></li>
+                        <li><a href="#benefits" class="text-decoration-none text-white">Benefits</a></li>
+                        <li><a href="#" class="text-decoration-none text-white">Pricing</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h6 class="fw-bold">Legal</h6>
+                    <ul class="list-unstyled small">
+                        <li><a href="#" class="text-decoration-none text-white">Privacy Policy</a></li>
+                        <li><a href="#" class="text-decoration-none text-white">Terms of Service</a></li>
+                        <li><a href="#" class="text-decoration-none text-white">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-3">
+            <div class="text-center small">
+                <p>&copy; 2026 Business Event Management System. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Authentication Modal -->
+    <div class="modal fade" id="authModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title fw-bold" id="authModalTitle">Login to BEMS</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Login Form -->
+                    <form id="loginForm" style="display: block;">
+                        <div class="mb-3">
+                            <label for="loginEmail" class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="loginEmail" required>
+                            <small id="loginEmailError" class="text-danger" style="display: none;"></small>
+                        </div>
+                        <div class="mb-3">
+                            <label for="loginPassword" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="loginPassword" required>
+                            <small id="loginPasswordError" class="text-danger" style="display: none;"></small>
+                        </div>
+
+                        <!-- Landing auth error (used by assets/js/landing.js) -->
+                        <div id="authErrorBox" class="alert alert-danger mt-2" style="display:none;"></div>
+
+                        <button type="submit" class="btn btn-primary w-100" id="loginSubmitBtn">
+                            <i class="fas fa-sign-in-alt"></i> Login
+                        </button>
+                        <div class="text-center mt-3">
+                            <small>Don't have an account? <a href="#" id="switchToRegister" class="text-primary">Register here</a></small>
+                        </div>
+                    </form>
+
+                    <!-- Registration Form -->
+                    <form id="registerForm" style="display: none;">
+                        <div class="mb-3">
+                            <label for="registerName" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="registerName" required>
+                            <small id="registerNameError" class="text-danger" style="display: none;"></small>
+                        </div>
+                        <div class="mb-3">
+                            <label for="registerEmail" class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="registerEmail" required>
+                            <small id="registerEmailError" class="text-danger" style="display: none;"></small>
+                        </div>
+                        <div class="mb-3">
+                            <label for="registerPhone" class="form-label">Phone Number</label>
+                            <input type="tel" class="form-control" id="registerPhone" required>
+                            <small id="registerPhoneError" class="text-danger" style="display: none;"></small>
+                        </div>
+                        <div class="mb-3">
+                            <label for="registerCompany" class="form-label">Company</label>
+                            <input type="text" class="form-control" id="registerCompany" required>
+                            <small id="registerCompanyError" class="text-danger" style="display: none;"></small>
+                        </div>
+                        <div class="mb-3">
+                            <label for="registerPassword" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="registerPassword" required>
+                            <small id="registerPasswordError" class="text-danger" style="display: none;"></small>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100" id="registerSubmitBtn">
+                            <i class="fas fa-user-plus"></i> Create Account
+                        </button>
+                        <div class="text-center mt-3">
+                            <small>Already have an account? <a href="#" id="switchToLogin" class="text-primary">Login here</a></small>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Alert for messages -->
+    <div id="alertContainer"></div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/landing.js"></script>
+</body>
+</html>
