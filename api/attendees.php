@@ -2,6 +2,7 @@
 /**
  * Attendees API
  * Handles attendee registration, check-in/out, and management
+ * I created it for tvet fair may 2026
  */
 
 header('Content-Type: application/json');
